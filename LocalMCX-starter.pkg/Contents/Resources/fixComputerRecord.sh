@@ -16,7 +16,7 @@ else
   otherRecordName=local_laptop
 fi
 # check what MAC address is currently stored in the computer record name
-storedMacAddress=`/usr/bin/dscl /var/db/dslocal/nodes/MCX -read /Computers/$computerRecordName ENetAddress | cut -f2 -d " "`
+storedMacAddress=`/usr/bin/dscl /Local/MCX -read /Computers/$computerRecordName ENetAddress | cut -f2 -d " "`
 
 if [ "$storedMacAddress" != "$macAddress" ] ; then
 	echo "Updating MAC address for /Computers/$computerRecordName..."
