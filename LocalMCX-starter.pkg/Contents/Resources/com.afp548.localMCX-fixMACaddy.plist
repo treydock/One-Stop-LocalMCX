@@ -8,7 +8,7 @@
         <key>ProgramArguments</key>
         <array>
             <string>/bin/sh</string>    
-			<string>/Library/Scripts/Admin-Added/fixComputerRecord.sh</string>
+			<string>/Library/Scripts/Managed/fixComputerRecord.sh</string>
         </array>
 	<key>WatchPaths</key>
    	<array>

@@ -3,7 +3,7 @@
 # Define directory variables.
 
 PKG_DIR="$1/Contents/Resources"
-SCRIPTS_DIR="$3/Library/Scripts/Admin-Added"
+SCRIPTS_DIR="$3/Library/Scripts/Managed"
 LAUNCHD_DIR="$3/Library/LaunchDaemons"
 LocalMCX_DB="$3/var/db/dslocal/nodes/MCX"
 

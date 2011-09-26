@@ -12,7 +12,7 @@
         <key>ProgramArguments</key>
         <array>
 			<string>/usr/bin/python</string>
-			<string>/Library/Scripts/Admin-Added/networkCheckers.py</string>
+			<string>/Library/Scripts/Managed/networkCheckers.py</string>
         </array>
 		<key>RunAtLoad</key>
 		<true/>
