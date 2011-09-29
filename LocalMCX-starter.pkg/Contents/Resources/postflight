@@ -12,12 +12,12 @@ LocalMCX_DB="$TARGET_DIR/var/db/dslocal/nodes/MCX"
 add_local_mcx() {
 	echo "Creating LocalMCX DB at $LocalMCX_DB"
 	/bin/mkdir "$LocalMCX_DB"
-	/usr/sbin/chown -R 0:0 $LocalMCX_DB
-	/bin/chmod 700 $LocalMCX_DB
+	/usr/sbin/chown -R 0:0 "$LocalMCX_DB"
+	/bin/chmod 700 "$LocalMCX_DB"
 }
 
 # first make sure /Local/MCX node exists, otherwise create it
-if [ ! -d "/private/var/db/dslocal/nodes/MCX" ] ; then
+if [ ! -d "${LocalMCX_DB}" ] ; then
 	echo "Missing /Local/MCX node!"
 	add_local_mcx
 fi
@@ -25,7 +25,7 @@ fi
 # If scripts subfolder doesn't exist, create it
 if [ ! -d "${SCRIPTS_DIR}" ] ; then
 	echo "Missing $SCRIPTS_DIR...creating"
-	/bin/mkdir $SCRIPTS_DIR
+	/bin/mkdir "$SCRIPTS_DIR"
 fi
 
 # get our launchd job loaded into the right directories
